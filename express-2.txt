@@ -1,0 +1,23 @@
+css/JS밑에있는 파일들을 정적파일이라고 불림
+정적파일들을 내 서버에 볼려면
+app.use(express.static(__dirname)) -> 이 공식으로 하면 서버내에서 css에서 작성
+한 이미지파일들이나 스타일들을 볼 수 있다.
+*참고로 이 공식은 모든 정적파일들을 제공한다는 의미이기도 한다.
+
+*데이터 보내주기(데이터 전송해주기)
+const bodyParser = require('body-parser');
+const에 bodyParser 선언
+app.use(bodyParser.urlencoded({extended : true}));
+app.post('/add', function (requests,respones) {
+ {
+respones.send('전송완료!')
+console.log(requests.body)
+})
+*참고로 아이디값과 패스워드값을 따로 하고 싶으면 
+console.log창에(.body.(id/pw))key값을 쓰면 된다.
+
+crtrl + C 로 서버 종료/해제 시키고 -> npm install body-parser(설치)에 명령어 입력
+->서버를 종료시키고 nodemon index.js를 치면 된다.
+*검색창에 login이라고 치고 거기에 있는 아이디과패스워드칸에 값을 적은 다음
+=> 버튼을 누르면 전송완료라는 글이 화면으로 바꿔짐
+

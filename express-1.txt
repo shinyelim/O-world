@@ -1,0 +1,33 @@
+Express 서버구축
+터미널 창 npm init ->   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+->npm install express ->added 58 packages, and audited 59 packages in 2s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+->node index.js 치면 콘솔에 쓴 7000번 포트라고 라옴
+->nodemon index.js ->[nodemon] 3.0.1
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node index.js`
+->이렇게 한 다음 크롬에 들어가서 주소창에 localhost:포트번호를 치면 잘 나옴
+
+map 마지막으로 카카오지도사이트에 들어가서 
+wep버젼으로 들어가서 지도를띄우는 코드 작성이라는 소제목 밑으로
+가서 html코드를 전체 복사하고 vscoed에 있는 html 에 붙여넣기 한 다음
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 넣으시면 됩니다."></script>
+*참고로 발급받은 app key는 kakao developers 사이트에 있는 
+앱키에있는 자바스크립트키를 넣어주면 됨.

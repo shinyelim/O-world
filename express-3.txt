@@ -1,0 +1,10 @@
+Express 서버 구축 순서
+npm init
+npm install express
+node index.js & nodemon index.js
+*참고로 서버를 해제 시키고 싶으면 crtl + c 단축키로 누르면 된다.
+ 
+참고로 nodemon index.js 은 node와 달리 서버 자동화이다.
+
+map API는 카카오지도사이트에서
+wep클릭 -> 지도띄우는코드 작성이라는 소제목 끝 밑에 가서
